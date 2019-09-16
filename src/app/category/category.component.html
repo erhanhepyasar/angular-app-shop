@@ -1,0 +1,7 @@
+<h3>{{ title }}</h3>
+<div class="list-group">
+  <a class="list-group-item active">All items</a>
+</div>
+<div *ngFor="let category of categories" class="list-group">
+  <a href="" class="list-group-item" routerLink="products/category/{{category.id}}">{{category.name}}</a>
+</div>
